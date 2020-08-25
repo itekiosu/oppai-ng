@@ -2478,7 +2478,7 @@ OPPAIAPI float ezpp_strain_at(ezpp_t ez, int i, int difficulty_type) {
   return ez->objects.len ? ez->objects.data[i].strains[difficulty_type] : 0;
 }
 
-OPPAIAPI float ezpp_ntiming_points(ezpp_t ez) {
+OPPAIAPI int ezpp_ntiming_points(ezpp_t ez) {
   return ez->timing_points.len;
 }
 
